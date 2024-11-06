@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Special Message</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe6e6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .message {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        #confession {
+            display: none;
+            font-size: 1.5em;
+            color: #e60073;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #e60073;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        button:hover {
+            background-color: #cc0066;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="message">
+            Hey, I have something to tell you... ❤️
+        </div>
+        <button onclick="revealConfession()">Click to see</button>
+        <div id="confession">
+            Chon Slanh ke mneak eg tv kmeng toch! 🤣
+        </div>
+    </div>
+
+    <script>
+        function revealConfession() {
+            document.getElementById("confession").style.display = "block";
+        }
+    </script>
+</body>
+</html>
